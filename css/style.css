@@ -125,3 +125,83 @@ main {
   clip-path: circle(40% at right 100%);
   z-index: 0;
 }
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  .right img {
+    height: 500px;
+  }
+
+  .circle {
+    clip-path: circle(20% at right 100%);
+  }
+
+  .like {
+    font-size: 5rem;
+    color: red;
+  }
+
+  .left p {
+    display: none;
+    visibility: hidden;
+  }
+
+  header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .right img {
+    display: none;
+    visibility: hidden;
+  }
+
+  .like {
+    font-size: 5rem;
+    color: red;
+  }
+
+  .left p {
+    display: none;
+    visibility: hidden;
+  }
+
+  header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+  }
+
+  .circle {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .left {
+    width: 100vw;
+  }
+  .like {
+    font-size: 2rem;
+    color: red;
+  }
+  header ul {
+    display: none;
+    visibility: hidden;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
