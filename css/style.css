@@ -83,6 +83,7 @@ header img {
   background: red;
   color: white;
   cursor: pointer;
+  transition: all 1s ease-in-out;
 }
 
 #button:hover {
